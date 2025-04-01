@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo de Madeira */
+body {
+    background-image: url('https://images.tcdn.com.br/img/img_prod/1113587/madeira_rustica_escura_501_1_e4c78ff6de476295579db21fb2176ff8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 60px; /* Para não esconder o conteúdo atrás do header */
+    text-align: center;
+    color: white;
+}
+
+/* Roda-teto */
+header {
+    background-color: #FFD700;
+    font-family: "Amatic SC", sans-serif;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navegação */
+nav {
+    margin-top: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Botões Centralizados */
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    background-color: #FFD700;
+    color: black;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #FFC107;
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #FFD700;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        max-width: 90%;
+    }
+}
